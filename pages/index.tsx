@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../src/components/layout/Layout";
-
+import { Button } from "@mui/material";
+import Header from "../src/components/header/Header";
 export default function Home() {
   return (
     <>
@@ -9,7 +10,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div>Ornn Foundation</div>
+        <Header />
+        <h1>1</h1>
+        <h1>1</h1>
+        <h1>1</h1>
+        <h1>1</h1>
+        <h1>1</h1>
+        <h1>1</h1>
+        <h1>1</h1>
+        <h1>1</h1>
+        <h1>1</h1>
+        <h1>1</h1>
+        <h1>1</h1>
       </Layout>
     </>
   );

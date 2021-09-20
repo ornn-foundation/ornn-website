@@ -4,6 +4,8 @@ import { reducer } from "../src/lib/reducers";
 import { Context, initialState } from "../src/lib/context";
 import { getStorage, KEY_STORAGE } from "../src/utils/local-storage";
 import "../public/styles/global.css";
+import { ThemeProvider } from "@mui/system";
+import theme from "../src/material/theme";
 
 function App({ Component, pageProps }: AppProps) {
   const [state, dispatch] = React.useReducer(reducer, initialState);
@@ -19,7 +21,9 @@ function App({ Component, pageProps }: AppProps) {
   }, []);
   return (
     <Context.Provider value={value}>
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </Context.Provider>
   );
 }

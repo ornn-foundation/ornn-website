@@ -1,0 +1,26 @@
+.container {
+  z-index: 1;
+  width: 100%;
+  padding: 8px 32px;
+  position: sticky;
+  top: 0;
+  height: 72px;
+  /* background: rgba(0, 0, 0, 0.8); */
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid #cccccc;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+}
+
+.spacer {
+  flex: 1;
+}

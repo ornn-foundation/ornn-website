@@ -1,4 +1,6 @@
 import React, { ReactElement } from "react";
+import Footer from "../footer/Footer";
+import Nav from "../nav/Nav";
 import styles from "./Layout.module.css";
 
 interface Props {
@@ -8,7 +10,9 @@ interface Props {
 const Layout = ({ children }: Props) => {
   return (
     <div className={styles.container}>
+      <Nav />
       <div className={styles.content}>{children}</div>
+      <Footer />
     </div>
   );
 };
