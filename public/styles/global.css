@@ -7,7 +7,10 @@ body {
   /* background: rgba(255, 192, 203, 0.1); */
   /* background: #000000; */
   /* background: linear-gradient(180deg, #FFC0CB 35%, #ffffff 100%); */
-
+  background-color: #9ab5e1;
+  background-image: linear-gradient(315deg, #9ab5e1 0%, #f39fdc 74%);
+  /* background-color: #8d5185;
+  background-image: linear-gradient(315deg, #8d5185 0%, #515e81 74%); */
 }
 
 * {
@@ -17,6 +20,8 @@ body {
 .dark {
   transition-timing-function: ease-out;
   transition: 0.5s;
-  background: #000000 !important;
+  /* background: #000000 !important; */
+  background-color: #8d5185;
+  background-image: linear-gradient(315deg, #8d5185 0%, #a1bafe 74%);
   background: none;
 }

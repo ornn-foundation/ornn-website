@@ -9,7 +9,7 @@ const theme = createTheme({
       contrastText: "#0E1318",
     },
     secondary: {
-      main: "#FF3659",
+      main: "#0E1318",
     },
     error: {
       main: red.A400,
@@ -18,9 +18,7 @@ const theme = createTheme({
       main: "#0E1318",
     },
     action: {
-      // hover: "#FF647F",
       active: "#FF647F",
-
     },
   },
 });

@@ -13,13 +13,13 @@ const MyThemeComponent = styled("div")(
 const CustomButtonRoot = styled("button")(
   ({ theme }) => `
   /* background-color: #FFC0CB; */
-  background-color: ${theme.palette.primary.main};
-  padding: 15px 20px;
+  background-color: #FF92A5;
+  padding: 16px 20px;
   border-radius: 10px;
-  color: ${theme.palette.info.main};
+  color: #fff;
   font-weight: 600;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   transition: all 200ms ease;
   cursor: pointer;
   box-shadow: 0 4px 20px 0 rgba(61, 71, 82, 0.1), 0 0 0 0 rgba(0, 127, 255, 0);
@@ -65,7 +65,16 @@ const Button = React.forwardRef(function CustomButton(
 
   return (
     <CustomButtonRoot {...getRootProps()} className={clsx(classes)}>
-      {children}
+      <div
+        style={{
+          margin: "auto",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {children}
+      </div>
     </CustomButtonRoot>
   );
 });

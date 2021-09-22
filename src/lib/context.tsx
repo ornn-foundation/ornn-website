@@ -8,6 +8,7 @@ export type ActionType =
 
 interface Theme {
   primary: string;
+  secondary: string;
   success: string;
   black: string;
   medium: string;
@@ -35,7 +36,8 @@ export interface InitialState {
 }
 
 export const themeDark = {
-  primary: "#23E884",
+  primary: "#c72e53",
+  secondary: "#ff97ae",
   link: "#3498ff",
   success: "#4CD964",
   warning: "#ffd534",
@@ -48,7 +50,8 @@ export const themeDark = {
 };
 
 export const theme = {
-  primary: "#1EC470",
+  primary: "#ff647f",
+  secondary: "#ff97ae",
   link: "#3498ff",
   success: "#4CD964",
   warning: "#FF9500",

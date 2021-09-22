@@ -1,23 +1,35 @@
 import React, { ReactElement } from "react";
+import Link from "next/link";
 
 interface Props {}
 
 function Logo({}: Props): ReactElement {
   return (
     <>
-      <div style={{ width: "fit-content", transform: "scale(0.9)" }}>
-        <div className="logo">
-          <div className="circle"></div>
-          <div className="mask"></div>
+      <Link href="/">
+        <div
+          style={{
+            width: "fit-content",
+            transform: "scale(0.9)",
+            cursor: "pointer",
+          }}
+        >
+          <div className="logo">
+            <div className="circle"></div>
+            <div className="mask"></div>
+          </div>
         </div>
-      </div>
+      </Link>
       <style jsx>{`
         .logo {
           width: 50px;
           height: 50px;
-          background: #FF647F;
+          background: #ff647f;
           border-radius: 50px;
           position: relative;
+        }
+        .logo:active {
+          background: #ff3659;
         }
         .circle {
           width: 17px;
